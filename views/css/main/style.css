@@ -1,0 +1,14 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+body {
+    font-family: "Nanum Gothic", Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333333;
+}
+
+header {
+    background: #393E44;
+    COLOR:#ddd;
+    margin-bottom:15px;
+}
+    
