@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style type="text/css">
+            body{
+                background-color: #212423;
+                color:#FFFFFF;
+            }
+            .inbox {
+                min-width: 450px;
+                max-width: 90%;
+            }
+            .top{
+                color:#DDDDDD;
+                margin-left: 20;
+            }
+            .toploc{
+                float: left;
+                display: block;
+                min-width: 15px;
+                width: 15px;
+                padding: 7px;
+                border-style: solid;
+                border-width:1px;
+                border-color:#AAAAAA;
+                position: relative;
+            }
+            .copyrightfont{
+                color:#DDDDDD;
+            }
+            .indexbody{
+                margin: auto;
+                color:#FFFFFF;
+            }
+            .signbody{
+                line-height: 160%;
+            }
+            .category{
+                min-width : 150px;
+                min-height : 150px;
+                position: relative;
+                margin: 10;
+                background-color: #333333;
+                color : #DDDDDD;
+                float: left;
+                width: 30%;
+                height: 35%;
+            }
+            .category-in{
+                padding: 20;
+            }
+            .category-text{
+                color : #AAAAAA;
+                font-size: 90%;
+            }
+            .category-clear{
+                background-color:#212423;
+                margin: 5;
+                float: left;
+            }
+            a:active,
+            a:hover,
+            a{
+                margin: 5;
+                text-decoration: none;
+                color : #BBBBBB;
+            }
+        </style>
+        <title>Test</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="top">
+                <h1 align="left">Test</h1><BR>
+                <a href="./"><span class="toploc">Home</span></a>
+                <a href="./"><span class="toploc">List</span></a>
+                <div style=""><br></div>
+                <hr style="color:#FFFFFF;">
+            </div>
+            {% block content %}{% endblock %}
+            <div class="bottom">
+                <div class="copyright">
+                    <hr color=#FFFF00 size="10"/>
+                    <div class="copyrightfont">
+                        Copyright © 2015 덩뭉. All rights reserved
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <!--JAVASCRIPT-->
+        <script type="text/javascript" src="/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#signup").click(function(){
+                    location.href = "./signup";
+                });
+                $("#signin").click(function(){
+                    location.href = "./signin";
+                });
+                $("#signout").click(function(){
+                    location.href = "./logout";
+                });
+                $("#admin").click(function(){
+
+                });
+            });
+        </script>
+    </body>
+</html>
